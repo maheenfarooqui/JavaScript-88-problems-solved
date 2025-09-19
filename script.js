@@ -133,3 +133,24 @@
 // console.log(sortArray([1,4,5,6,7,9]));
 
 
+
+// Q11 Write a function `stringLength` that returns the length of a given string.
+
+
+
+// function stringLength(mystr){
+//    return mystr.length ;
+// }
+
+// console.log(stringLength("hello"));
+
+
+// Q12. Create a function `toUpperCase` that takes a string and returns it in uppercase.
+
+function toUpperCase(mystr){
+   return mystr.toUpperCase();
+}
+console.log(toUpperCase("maheen"));
+
+ 
+
