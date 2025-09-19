@@ -147,10 +147,23 @@
 
 // Q12. Create a function `toUpperCase` that takes a string and returns it in uppercase.
 
-function toUpperCase(mystr){
-   return mystr.toUpperCase();
+
+
+// function toUpperCase(mystr){
+//    return mystr.toUpperCase();
+// }
+// console.log(toUpperCase("maheen"));
+
+
+// 13. Write a function `capitalizeFirstLetter` that capitalizes the first letter of each word in a string.
+
+
+function capitalizeFirstLetter(mystr){
+   return mystr.split("  ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join();
 }
-console.log(toUpperCase("maheen"));
+
+console.log(capitalizeFirstLetter("hello world"));
+
 
  
 
