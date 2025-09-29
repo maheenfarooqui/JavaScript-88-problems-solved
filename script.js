@@ -1,6 +1,5 @@
 // Q1. Write a function `isEven` that takes a number as an argument and returns true if the number is even and false if it is odd.
 
-
 // function isEven(number){
 //     if(number % 2 === 0){
 //         return true;
@@ -11,9 +10,7 @@
 // }
 // console.log(isEven(8));
 
-
 // Q2. Create a function `countVowels` that takes a string and returns the number of vowels in that string.
-
 
 // function countVowels(myString) {
 //   let vowelList = "aeiouAEIOU";
@@ -29,30 +26,21 @@
 // }
 // console.log(countVowels("Javascript"));
 
-
-
 // Q3. Write a function `reverseString` that takes a string and returns it reversed (e.g., "hello" becomes "olleh").
-
 
 // function reverseString(myString){
 //    return myString.split("").reverse().join("");
 // }
 // console.log(reverseString("helloworld"));
 
-
-
 // Q4. Create a function `findMax` that takes an array of numbers and returns the largest number.
-
 
 // function findMax(myarr){
 //    return Math.max(...myarr)
 // }
 // console.log(findMax([3, 8, 2, 10, 6]));
 
-
-
 // Q5. Write a function `isPalindrome` that checks if a given string is a palindrome (reads the same backward as forward).
-
 
 //  function isPalindrome(mystr){
 //    let revers = mystr.split("").reverse().join("");
@@ -60,13 +48,9 @@
 
 //  }
 //  console.log(isPalindrome("madam"));
-// console.log(isPalindrome("hello")); 
-
-
+// console.log(isPalindrome("hello"));
 
 // Q6. Create a function `fibonacci` that returns the nth Fibonacci number
-
-
 
 // function fibonacci(nth){
 //    if(nth < 0) return null ;
@@ -100,10 +84,7 @@
 
 // console.log(factorial(8));
 
-
-
 // q8. Create a function `removeDuplicates` that takes an array and returns a new array without duplicates.
-
 
 // function removeDuplicates(myArr){
 //    return [... new Set(myArr)]
@@ -111,8 +92,6 @@
 // }
 
 // console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
-
-
 
 // Q9. Write a function `sumArray` that takes an array of numbers and returns the sum.
 
@@ -122,8 +101,6 @@
 
 // console.log(sumArr([1,4,5,6,7,9]));
 
-
-
 // Q,10. Create a function `sortArray` that takes an array of numbers and returns it sorted in ascending order.
 
 // function sortArray(myArr){
@@ -132,11 +109,7 @@
 
 // console.log(sortArray([1,4,5,6,7,9]));
 
-
-
 // Q11 Write a function `stringLength` that returns the length of a given string.
-
-
 
 // function stringLength(mystr){
 //    return mystr.length ;
@@ -144,26 +117,97 @@
 
 // console.log(stringLength("hello"));
 
-
 // Q12. Create a function `toUpperCase` that takes a string and returns it in uppercase.
-
-
 
 // function toUpperCase(mystr){
 //    return mystr.toUpperCase();
 // }
 // console.log(toUpperCase("maheen"));
 
-
 // 13. Write a function `capitalizeFirstLetter` that capitalizes the first letter of each word in a string.
 
+// function capitalizeFirstLetter(mystr){
+//    return mystr.split("  ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join();
+// }
 
-function capitalizeFirstLetter(mystr){
-   return mystr.split("  ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join();
-}
+// console.log(capitalizeFirstLetter("hello world"));
 
-console.log(capitalizeFirstLetter("hello world"));
+// Q14 Create a function `mergeArrays` that takes two arrays and merges them into one
 
+// function mergeArrays(myArr1 , myArr2){
+//    return [...myArr1, ...myArr2];
+// }
+// console.log(mergeArrays([1,2,4,5,6],[3,4,5,6]));
 
- 
+// Q15 Write a function `isPrime` that checks if a number is prime.
 
+// function isPrime(myNum){
+//    if( myNum <= 1) return false ;
+//    if( myNum === 2) return true ;
+
+//    for(let i = 2 ; i <= Math.sqrt(myNum) ; i++){
+//       if(myNum % i === 0){
+//          return false;
+//       }
+
+//    }
+//    return true;
+
+// }
+//  console.log(isPrime(7));
+
+// Q16. Create a function `countWords` that counts the number of words in a string.
+
+// function countWords(myStr){
+//    let words = myStr.trim().split(/\s+/);
+
+//    return myStr.trim() === ""  ? 0 : words.length;
+// }
+// console.log(countWords("   This is   a test "));
+
+// Q17. Write a function `arrayContains` that checks if an array contains a specific value.
+
+// function arrayContains(myArr, value){
+
+//    return myArr.includes(value);
+
+// }
+// console.log(arrayContains([1, 2, 3, 4], 5));
+
+// Q8. Create a function `uniqueElements` that returns an array of unique elements from a given array.
+
+// function uniqueElements(myArr){
+
+//    return [... new Set(myArr)]
+
+// }
+
+// console.log(uniqueElements(["apple", "banana", "apple", "mango"]));
+
+// Q19. Write a function `flattenArray` that flattens a nested array.
+
+// function flattenArray(myArr){
+
+//    return myArr.flat(Infinity);
+// }
+
+// console.log(flattenArray([[["a"]], ["b", ["c"]]]));
+
+// Q20. Create a function `repeatString` that takes a string and a number, and returns the string repeated that many times.
+
+// function repeatString(myStr , num){
+//    return myStr.repeat(num);
+
+// }
+
+// console.log(repeatString("maheen", 4));
+
+// Q21. Write a function `getRandomInt` that returns a random integer between two numbers.
+
+// function getRandomInt(num1, num2) {
+//   return Math.floor(Math.random() * (num2 - num1 + 1) + num1);
+// }
+
+// console.log(getRandomInt(2, 12));
+
+// Q22. Create a function `average` that calculates the average of an array of numbers.
