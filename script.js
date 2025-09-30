@@ -211,3 +211,95 @@
 // console.log(getRandomInt(2, 12));
 
 // Q22. Create a function `average` that calculates the average of an array of numbers.
+
+// function average(myArr){
+//    if(myArr.length === 0) return 0 ;
+
+//    let sum = myArr.reduce((accu , num) =>  accu + num , 0);
+
+//    return sum / myArr.length
+// }
+
+// console.log(average([10,20,30]));
+
+// Q23. Write a function `removeSpaces` that removes all spaces from a string.
+
+// function removeSpaces(myStr){
+//    return myStr.replace(/\s+/g , "");
+// }
+// console.log(removeSpaces("hello world maheen"));
+
+// Q24. Create a function `difference` that returns the difference between the largest and smallest numbers in an array.
+
+// function difference(myArr){
+//    if(myArr.length === 0) return 0;
+//    let largest = Math.max(... myArr);
+//    let smallest = Math.min(... myArr);
+
+//    return largest - smallest;
+// }
+
+// console.log(difference([10, 20, 30, 40]));
+
+// Q25. Write a function `shuffledArray` that takes an array and returns it shuffled randomly.
+
+// function shuffledArray(myArr){
+//    let newArr = myArr.slice();
+
+//    for(let i = newArr.length - 1 ; i > 0 ; i--){
+//       let j = Math.floor(Math.random() * (i + 1));
+//       [newArr[i],newArr[j]] = [newArr[j],newArr[i]];
+//    }
+//    return newArr;
+
+// }
+// console.log(shuffledArray([1, 2, 3, 4, 5]));
+
+//  Q26. Create a function `longestWord` that returns the longest word in a string.
+
+// function longestWord(myStr){
+
+//    let words = myStr.match(/\w+/g, "");
+//    if(!words) return "";
+
+//    return words.reduce((longest , current) => current.length > longest.length ? current : longest , "" )
+
+// }console.log(longestWord("JavaScript is amazing!!!"));
+
+// Q27. Write a function `countDown` that takes a number and counts down to zero, logging each number.
+
+// function countDown(myNum){
+//    for(i = myNum ; i >= 0 ; i--){
+//       console.log(i);
+
+//    }
+// }
+
+// console.log(countDown(9));
+
+// Q28. Create a function `firstNonRepeatingChar` that finds the first non-repeating character in a string.
+
+// function firstNonRepeatingChar(myStr){
+//    const nonRepeat = new Map();
+
+//     for (const char of myStr) {
+//     nonRepeat.set(char, (nonRepeat.get(char) || 0) + 1);
+//   }
+//     for (const [char, count] of nonRepeat) {
+//     if (count === 1) {
+//       return char;
+//     }
+//   }
+
+//   return null;
+// }
+// console.log(firstNonRepeatingChar(""));
+
+// Q29. Write a function `toTitleCase` that converts a string to title case.
+
+// function toTitleCase(myStr) {
+//   return myStr.toLowerCase().replace(/\b\w/g, (char) => char.toUpperCase());
+// }
+// console.log(toTitleCase("hello my name is maheen zuhra"));
+
+// Q30. Create a function `removeElement` that removes a specified element from an array.
