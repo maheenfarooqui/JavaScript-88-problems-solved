@@ -303,3 +303,8 @@
 // console.log(toTitleCase("hello my name is maheen zuhra"));
 
 // Q30. Create a function `removeElement` that removes a specified element from an array.
+
+// function removeElement(myArr, element) {
+//   return myArr.filter(item => item !== element);
+// }
+// console.log(removeElement([1, 2, 3, 4], 3));
