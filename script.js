@@ -308,3 +308,20 @@
 //   return myArr.filter(item => item !== element);
 // }
 // console.log(removeElement([1, 2, 3, 4], 3));
+
+// 31. Write a function `swap` that swaps the values of two variables.
+
+// function swap(varA , varB){
+//     [varA, varB] = [varB, varA]
+//     return [varA, varB];
+// }
+// let [varA, varB] = swap(5, 10);
+// console.log(varA, varB);
+
+// Q32. Create a function `countOccurrences` that counts how many times a specific value appears in an array.
+
+// function countOccurrences(myArr , value){
+//     return myArr.filter(item  => item === value).length;
+// }
+// console.log(countOccurrences([1,2,4,5,6,4,6,3,4], 4));
+
