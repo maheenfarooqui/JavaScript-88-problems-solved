@@ -325,3 +325,31 @@
 // }
 // console.log(countOccurrences([1,2,4,5,6,4,6,3,4], 4));
 
+// Q33. Write a function `mostFrequent` that finds the most frequently occurring element in an array.
+function mostFrequent(myArr) {
+  let count = {};
+
+  for (let i = 0; i < myArr.length; i++) {
+    let myNum = myArr[i];
+    if (count[myNum]) {
+      count[myNum]++;
+    } else {
+      count[myNum] = 1;
+    }
+  }
+
+
+  let maxCount = 0;
+  let mostFrequentElement;
+
+  for (let myNum in count) {
+    if (count[myNum] > maxCount) {
+      maxCount = count[myNum];
+      mostFrequentElement = myNum; 
+    }
+  }
+
+  return mostFrequentElement;
+}
+
+console.log(mostFrequent([1, 2, 2, 3, 1, 2, 4])); 
